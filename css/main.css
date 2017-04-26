@@ -493,28 +493,40 @@ html, body {
 	margin: 0 auto;
 	text-align: center;
 }
-	@media (max-width: 375px) {
+	@media (max-width: 320px) {
 		.header-menu {
 			display: block;
 		}
 		#menu ul {
 			padding: 0;
 		}
+		#menu ul li {
+			margin: 3px;
+		}
 		#menu ul li a {
-			font-size: 18px;
+			font-size: 17px;
 		}
 		.brandName {
 			display: block;
 			text-align: center;
+			font-size: 35px;
 		}
 		.banner {
-			height: 230px;
+			height: 280px;
+			background-size: cover;
+		}
+		.buttons .our-projects .contact-us {
+			border: none;
 		}
 		.introText h1 {
 			font-size: 27px;
 		}
 		.textWhy {
 			margin: 40px 0;
+		}
+		.ourWorks p {
+			padding: 0 12px;
+			margin-bottom: 15px;
 		}
 		.whyUs {
 			display: inline;
@@ -525,6 +537,10 @@ html, body {
 		#works ul li a {
 			font-size: 17px;
 		}
+		#works ul li {
+			padding-bottom: 12px;
+			margin: 0 8px;
+		}
 		#works ul {
 			padding: 0;
 			margin: 0;
@@ -533,7 +549,7 @@ html, body {
 			display: none;
 		}
 		.images .img-wrap img {
-			width: 375px;
+			max-width: 320px;
 		}
 		.presentation {
 			width: 100%;
@@ -544,8 +560,9 @@ html, body {
 		}
 		.textInfo p {
 			text-align: center;
-			padding: 0 20px;
-			margin: 20px 0;
+			padding: 0 12px;
+			margin: 10px 0;
+			font-size: 16px;	
 		}
 		.post img {
 			display: none;
@@ -561,11 +578,19 @@ html, body {
 		#subscribe {
 			height: 130px;
 		}
+		#subscribe form input[type="email"] {
+			width: 155px;
+		}
 		#subscribe h2 {
 			height: 48px;
+			padding-top: 10px;
+			font-size: 20px;
 		}
 		.subText {
 			display: none;
+		}
+		.inner {
+			width: 288px;
 		}
 		.all {
 			display: flex;
@@ -574,5 +599,8 @@ html, body {
 		.social-links {
 			text-align: center;
 			margin: 0 10px;
+		}
+		.social-links h2 {
+			margin: 10px 0;
 		}
 	}
