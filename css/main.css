@@ -228,18 +228,19 @@ html, body {
 	font-size: 0;
 }
 .img-wrap:hover .img-toast {
-
-	transition: all 2s ease-in-out;
-	bottom: 0;
+	bottom: 0px;
+	text-decoration: underline;
 }
 .img-toast {
 	position: absolute;
 	width: 100%;
 	height: 60px;
+	bottom: -60px;
 	display: block;
 	background-color: rgba(77,208,225, .6);
 	color: #fff;
 	padding: 0 15px;
+	transition: all .5s ease-in-out;
 }
 .img-toast a {
 	font-size: 20px;
@@ -493,124 +494,14 @@ html, body {
 	margin: 0 auto;
 	text-align: center;
 }
-	@media (max-width: 320px) {
-		.header-menu {
-			display: block;
-		}
-		#menu ul {
-			padding: 0;
-		}
-		#menu ul li {
-			margin: 3px;
-		}
-		#menu ul li a {
-			font-size: 17px;
-		}
-		.brandName {
-			display: block;
-			text-align: center;
-			font-size: 35px;
-		}
-		.banner {
-			height: 280px;
-			background-size: cover;
-		}
-		.buttons .our-projects .contact-us {
-			border: none;
-		}
-		.introText h1 {
-			font-size: 27px;
-		}
-		.textWhy {
-			margin: 40px 0;
-		}
-		.ourWorks p {
-			padding: 0 12px;
-			margin-bottom: 15px;
-		}
-		.whyUs {
-			display: inline;
-		}
-		.whyUs i {
-			font-size: 120px;
-		}
-		#works ul li a {
-			font-size: 17px;
-		}
-		#works ul li {
-			padding-bottom: 12px;
-			margin: 0 8px;
-		}
-		#works ul {
-			padding: 0;
-			margin: 0;
-		}
-		#works ul::before {
-			display: none;
-		}
-		.images .img-wrap img {
-			width: 320px;
-		}
-		.presentation {
-			width: 100%;
-			height: 466px;
-		}
-		.textInfo h2 {
-			margin-top: 30px;
-		}
-		.textInfo p {
-			text-align: center;
-			padding: 0 12px;
-			margin: 10px 0;
-			font-size: 16px;	
-		}
-		.post img {
-			display: none;
-		}
-		.post {
-			padding: 0;
-			display: flex;
-			flex-direction: column-reverse;
-		}
-		.services {
-			display: none;
-		}
-		#subscribe {
-			height: 130px;
-		}
-		#subscribe form input[type="email"] {
-			width: 155px;
-		}
-		#subscribe h2 {
-			height: 48px;
-			padding-top: 10px;
-			font-size: 20px;
-		}
-		.subText {
-			display: none;
-		}
-		.inner {
-			width: 288px;
-		}
-		.all {
-			display: flex;
-			flex-direction: column;
-		}
-		.social-links {
-			text-align: center;
-			margin: 0 10px;
-		}
-		.social-links h2 {
-			margin: 10px 0;
-		}
-	}
 
-	@media (max-width: 375px) {
+	@media (max-width: 768px) {
 		.header-menu {
 			display: block;
 		}
 		#menu ul {
 			padding: 0;
+			text-align: center;
 		}
 		#menu ul li {
 			margin: 3px;
@@ -641,7 +532,8 @@ html, body {
 			margin-bottom: 15px;
 		}
 		.whyUs {
-			display: inline;
+			display: flex;
+      justify-content: space-around;
 		}
 		.whyUs i {
 			font-size: 120px;
@@ -660,8 +552,12 @@ html, body {
 		#works ul::before {
 			display: none;
 		}
-		.images .img-wrap img {
-			width: 375px;
+		.img-wrap {
+		  width: 100%;
+		}
+		.images img {
+    width: 100%;
+    height: 400px;
 		}
 		.presentation {
 			width: 100%;
@@ -689,6 +585,7 @@ html, body {
 		}
 		#subscribe {
 			height: 130px;
+			margin-top: -55px;
 		}
 		#subscribe form input[type="email"] {
 			width: 155px;
@@ -701,12 +598,19 @@ html, body {
 		.subText {
 			display: none;
 		}
-		.inner {
-			width: 288px;
+		.news {
+			display: inline-flex;
+		}
+		.news h4 {
+			display: none;
 		}
 		.all {
 			display: flex;
 			flex-direction: column;
+		}
+		.main-wrap {
+			margin: 20px 0;
+			padding: 0 30px;
 		}
 		.social-links {
 			text-align: center;
